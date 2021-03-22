@@ -10,10 +10,10 @@
 
 /*===== Colores =====*/
 :root {
-  --first-color: #4070f4;
-  --second-color: #0e2431;
-  --bg-color: #f4f6f8;
-  --accent-color: #5adec5;
+  --accent-color: #4070f4;
+  --bg-color: #0e2431;
+  --second-color: #f4f6f8;
+  --first-color: #5adec5;
 }
 
 /*===== Fuente y tipografia =====*/
@@ -126,7 +126,8 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #fff;
+
+  background-color: var(--first-color);
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
 
@@ -146,7 +147,7 @@ img {
     width: 80%;
     height: 100%;
     padding: 2rem;
-    background-color: var(--second-color);
+    background-color: var(--bg-color);
     transition: 0.5s;
   }
 }
@@ -167,7 +168,7 @@ img {
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color: var(--first-color);
+  background-color: var(--bg-color);
 }
 .nav__logo {
   color: var(--second-color);
@@ -190,7 +191,7 @@ img {
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color: var(--first-color);
+  background-color: var(--bg-color);
 }
 
 /*=== Show menu ===*/
@@ -237,7 +238,7 @@ img {
 .button {
   display: inline-block;
   background-color: var(--first-color);
-  color: #fff;
+  color: var(--bg-color);
   padding: 0.75rem 2.5rem;
   font-weight: var(--font-semi);
   border-radius: 0.5rem;
@@ -358,6 +359,7 @@ img {
   border: 1.5px solid var(--second-color);
   outline: none;
   margin-bottom: var(--mb-4);
+  background-color: var(--second-color);
 }
 .contact__button {
   display: block;
@@ -366,12 +368,13 @@ img {
   font-size: var(--normal-font-size);
   cursor: pointer;
   margin-left: auto;
+  color: #0e2431;
 }
 
 /* ===== FOOTER =====*/
 .footer {
-  background-color: var(--second-color);
-  color: #fff;
+  background-color: var(--first-color);
+  color: var(--bg-color);
   text-align: center;
   font-weight: var(--font-semi);
   padding: 2rem 0;
@@ -385,7 +388,7 @@ img {
 }
 .footer__icon {
   font-size: 1.5rem;
-  color: #fff;
+  color: var(--bg-color);
   margin: 0 var(--mb-2);
 }
 
@@ -421,7 +424,7 @@ img {
     display: none;
   }
   .nav__link {
-    color: var(--second-color);
+    color: var(--bg-color);
   }
 
   .home {
