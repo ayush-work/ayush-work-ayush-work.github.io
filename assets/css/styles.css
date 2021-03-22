@@ -178,7 +178,7 @@ img {
   align-items: center;
 }
 .nav__toggle {
-  color: var(--second-color);
+  color: var(--bg-color);
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -191,7 +191,7 @@ img {
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color: var(--bg-color);
+  background-color: var(--first-color);
 }
 
 /*=== Show menu ===*/
@@ -467,6 +467,9 @@ img {
   }
   .contact__container {
     justify-items: center;
+  }
+  .active::after {
+    background-color: var(--bg-color);
   }
 }
 
