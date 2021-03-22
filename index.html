@@ -212,7 +212,7 @@
         <h2 class="section-title">Contact</h2>
 
         <div class="contact__container bd-grid">
-          <form name="contact" class="contact__form" action="POST" data-netlify="true">
+          <form name="contact" class="contact__form" method="POST" data-netlify="true" netflify>
             <input type="text" placeholder="Name" class="contact__input" name="name"/>
             <input type="mail" placeholder="Email" class="contact__input" name="email"/>
             <textarea
@@ -223,11 +223,10 @@
               class="contact__input"
               name="message"
             ></textarea>
-            <input
+            <button
               type="submit"
-              value="Say Hello"
               class="contact__button button"
-            />
+            >Say Hello</button>
           </form>
         </div>
       </section>
