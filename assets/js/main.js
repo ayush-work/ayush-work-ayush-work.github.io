@@ -1,4 +1,11 @@
+// import { Typewriter } from "https://unpkg.com/typewriter-effect@latest/dist/core.js";
+
+// new Typewriter(".type", {
+//   strings: ["Hello", "World"],
+//   autoStart: true,
+// });
 /*===== MENU SHOW =====*/
+
 const showMenu = (toggleId, navId) => {
   const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId);
@@ -63,3 +70,5 @@ console.log(workImg);
 workImg.forEach((img) => {
   img.addEventListener("click", () => {});
 });
+
+var type = document.querySelector(".type");

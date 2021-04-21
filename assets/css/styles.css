@@ -231,7 +231,7 @@ img {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 295px;
+  width: 200px;
 }
 
 /*BUTTONS*/
@@ -260,7 +260,9 @@ img {
 }
 .about__img img {
   width: 200px;
-  border-radius: 0.5rem;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
 /* ===== SKILLS =====*/
@@ -444,8 +446,8 @@ img {
     margin-right: var(--mb-4);
   }
   .home__img {
-    width: 457px;
-    bottom: 15%;
+    width: 350px;
+    bottom: 5%;
   }
 
   .about__container,
@@ -455,7 +457,9 @@ img {
     text-align: center;
   }
   .about__img img {
-    width: 300px;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
   }
   .work__container {
     grid-template-columns: repeat(3, 1fr);
@@ -471,6 +475,29 @@ img {
   .active::after {
     background-color: var(--bg-color);
   }
+  .resume {
+    margin-left: 0;
+  }
+  .button-grp {
+    flex-direction: column;
+  }
+  .about__grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    font-size: 1.25rem;
+    /* max-width: 100% !important; */
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0fr 0fr;
+    gap: 1em;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center; */
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -485,4 +512,29 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+}
+.resume {
+  margin-left: 1em;
+}
+
+@media all and (max-width: 340px) {
+  .resume {
+    margin-top: 1em;
+    margin-left: 0;
+  }
+}
+
+/* .download {
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 1em;
+  color: white;
+}
+.download > a {
+  color: #5adec5;
+} */
+.about__grid {
+  margin: 0 auto;
+  max-width: 80%;
+  display: grid;
 }
