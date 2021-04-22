@@ -346,7 +346,7 @@ img {
 }
 .work__img {
   box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
-  width: 20em;
+
   height: 15em;
   /* overflow: hidden; */
 }
