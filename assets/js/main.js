@@ -63,12 +63,61 @@ sr.reveal(".work__img", { interval: 200 });
 /*SCROLL CONTACT*/
 sr.reveal(".contact__input", { interval: 200 });
 
+const projects = [
+  {
+    id: 1,
+    title: "E-POLICE",
+    url: "https://github.com/ayush-work/E-POLICE",
+    description: "A Smart E-policing app built using flutter",
+    tech: ["Flutter", "Firebase", "Dart"],
+  },
+  {
+    id: 2,
+    title: "Missing Person",
+    url: "https://github.com/ayush-work/Missing-People",
+    description: "A community connect for finding missing person",
+    tech: ["Flutter", "Firebase", "Dart"],
+  },
+  {
+    id: 3,
+    title: "traCovid",
+    url: "https://github.com/ayush-work/traCovid",
+    description: "A simple covid-19 tracking app built using React",
+    tech: ["React"],
+  },
+  {
+    id: 4,
+    title: "OCR-NLP",
+    url: "https://github.com/ayush-work/ocr-nlp",
+    description:
+      "An online text recognizer and converter built using React and Tesseract.js ",
+    tech: ["React", "Tesseract", "Tensorflow"],
+  },
+  {
+    id: 4,
+    title: "Online Blood Bank Donation portal",
+    url: "https://github.com/ayush-work/Blood_Bank",
+    description: "An online Blood bank donation portal ",
+    tech: ["HTML", "CSS"],
+  },
+];
 const workImg = document
   .querySelector(".work__container")
-  .querySelectorAll("img");
-console.log(workImg);
-workImg.forEach((img) => {
-  img.addEventListener("click", () => {});
-});
+  .querySelectorAll(".work__img");
+let imgLink = document.createElement("a");
+workImg.forEach((img, idx) => {
+  img.innerHTML = `
+  <a href=${projects[idx].url} target="_blank">
+  <img src="/assets/img/work${idx + 1}.png" alt="" class='demo-img'/>
+  <div class='overlay'></div>
+  <div class='project_title'>${projects[idx].title}</div>
+  <div class="content">${
+    projects[idx].description
+  }   <div class="project_stack"><h2>Built Using: </h2>${projects[
+    idx
+  ].tech.join(", ")}</div></div>
 
+  
+  `;
+});
 var type = document.querySelector(".type");
