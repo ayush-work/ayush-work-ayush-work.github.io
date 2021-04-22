@@ -340,12 +340,14 @@ img {
 
 /* ===== WORK =====*/
 .work__container {
+  justify-content: center;
+  align-items: center;
   row-gap: 4rem;
 }
 .work__img {
   box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
-  width: 300px;
-  height: 200px;
+  width: 20em;
+  height: 15em;
   /* overflow: hidden; */
 }
 .work__img img {
@@ -589,11 +591,9 @@ img {
   color: #5adec5;
   font-size: 0.9rem;
 }
-/* .project_stack > h2 {
-  font-weight: 500;
-  font-weight: 0.7rem;
-} */
+
 .overlay {
+  border-radius: 0.5rem;
   position: absolute;
   top: 0;
   left: 0;
